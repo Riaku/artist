@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Furry Artist List</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/4.0.0/material-components-web.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.material.min.css">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Furry Artist List</a>
+    </div>
+  </nav>
+
+
+  <div id="main-container" class="container">
+    <p class="grey-text text-darken-2">if description contains any of the keywords or phrases the system will identify you as open for comissions. please update your twitter profile to add/remove these and wait up to 30 minutes for it to take effect. : #ofc, #comissionsopen, #open, #comissions, #alwaysopen, #OC, comissions open, open for comissions</p>
+    <br>
+
+  </div>
+  <div id="errorMessage" class="darken-2 red-text"></div>
+  <div class="container">
+    <form action="/api" class="row">
+        <div class="col">
+        </div>
+        <div class="input-field col center-align">
+          <input placeholder="Artist's twitter Handle" id="artist_url" type="text" class="validate center">
+        </div>
+        <div class="input-field col center-align">
+          <input placeholder="Artist's art medium" id="artist_medium" type="text" class="validate center">
+          <a id="submitButton" class="waves-effect waves-light btn" onClick="clickSubmit()">Submit URL</a>
+        </div>
+    </form>
+  </div>
+  <!-- <footer class="page-footer grey">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer title</h5>
+          <p class="grey-text text-lighten-4">text.</p>
+        </div>
+      </div>
+    </div>
+    <a class="orange-text text-lighten-3" href="http://materializecss.com">Made by Materialize</a>
+  </footer> -->
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/submit.js"></script>
+
+  </body>
+</html>
